@@ -1,0 +1,134 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root {
+
+        /* dark mode */
+        --dm-body-bg: #23232c;
+        --dm-body-content: #c7c7c7;
+        --dm-header-bg: #6565df;
+        --dm-links-bg: #ffffff14;
+
+        /* light mode */
+        --lm-body-bg: #ffffff;
+        --lm-body-content: #292929;
+        --lm-header-bg: #9595e9;
+        --lm-links-bg: #585858;
+}
+
+* {
+        margin: 0;
+        padding: 0;
+}
+
+html * {
+        font-family: "Quicksand", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+}
+
+body {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        background-color: #23232c;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+}
+
+header {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+}
+
+header * {
+        display: flex;
+}
+
+.links {
+        display: flex;
+        width: 40%;
+        height: 60px;
+        padding: 0 10px;
+}
+
+@media screen and (max-width: 950px) {
+        .links {
+                width: 90%;
+        }
+}
+
+.link_redirect {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+}
+
+.link_item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+}
+
+.link_item img {
+        width: 30px;
+        border-radius: 50%;
+}
+
+.link_item {
+        width: 100%;
+}
+
+.link_spotify {
+        width: 100%;
+        height: 380px;
+}
+
+@media (prefers-color-scheme: dark) {
+
+        body {
+                background-color: var(--dm-body-bg);
+        }
+
+        body * {
+                color: var(--dm-body-content);
+        }
+
+        header {
+                background-color: var(--dm-header-bg);
+        }
+
+        header .right .dark {
+                display: none;
+        }
+}
+
+@media (prefers-color-scheme: light) {
+
+        body {
+                background-color: var(--lm-body-bg);
+        }
+
+        body * {
+                color: var(--lm-body-content);
+        }
+
+        header {
+                background-color: var(--lm-header-bg)
+        }
+
+        header .right .light {
+                display: none;
+        }
+
+}

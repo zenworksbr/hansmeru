@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="UTF-8">
+                <title>Zenworks - Redirect</title>
+                <link rel="stylesheet" href="static/main.css">
+                <link rel="shortcut icon" href="static/favicon.png">
+                <script src="https://kit.fontawesome.com/4e92316c7f.js" crossorigin="anonymous"></script>
+        </head>
+        <body>
+                <script src="./static/main.js" type="text/javascript"></script>
+                <script src="./static/data.js" type="text/javascript"></script>
+                <script type="text/javascript">
+                        let query = window.location.search.replace("?", "").replace('&', '=').split("=")[1]
+                        if (!query) {
+                                getTranslationStrings('en')
+                        } else {
+                                getTranslationStrings(query);
+                        }
+                </script>
+                <header>
+                        <div class="left">
+                                <button>
+                                        <i class="fa-solid fa-language"></i> 
+                                </button>
+                        </div>
+                        <div class="right">
+                                <button class="dark">
+                                        <i class="fa-solid fa-lightbulb"></i>
+                                </button>
+                                <button class="light">
+                                        <i class="fa-regular fa-lightbulb"></i>
+                                </button>
+                        </div>
+                </header>
+                <div class="main_info">
+                        <script>
+                                generatePFP(user.image_url);
+                                generateUserInfo(user.name, strings.title);
+
+                        </script>
+                </div>
+                <div class="links">
+                        <script>
+                                generateLinks(links);
+                        </script>
+                </div>
+
+                <footer>
+                </footer>
+        </body>
+</html>
