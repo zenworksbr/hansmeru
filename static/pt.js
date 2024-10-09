@@ -1,4 +1,4 @@
-const strings = {
+lang['pt'] = {
         "title": "Sou fofinho, viado, casado e tchola.",
         "links": {
                 "title": "siga minhas redes :)<br>Estou produzindo meus próprios quadrinhos!",
