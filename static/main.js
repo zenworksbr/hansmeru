@@ -67,13 +67,14 @@ function generateSpotifyFrame(link) {
         return frame
 }
 
-function generateLinks(links) {
+function generateLinks(link_conts, links) {
         const parent = document.getElementsByClassName('links')[0]
+        parent.innerText = link_conts.title
         for (const [title, data] of Object.entries(links)) {
                 if (title == 'spotify') {
                         parent.appendChild(generateSpotifyFrame(data))
                         continue
                 }
-                parent.appendChild(generateLinkElement(title, data))
+                parent.appendChild(generateLinkElement(link_conts.items[title], data))
         }
 }
