@@ -1,7 +1,6 @@
 const user = {
         "name": "Olá, sou o joãozinho uwu",
         "image_url": "https://prd.resource-api.lit.link/v1/images/resized?image_url%3Dimages%2Fcreator%2Fd0f58091-7d29-4d58-a85a-a6a94a274d99%2Faee5f4aa-5d2a-466f-9885-cf82c79052e6.jpg%26width%3D240",
-        
 }
 const links = {
         "kofi": {
@@ -34,3 +33,5 @@ const links = {
         },
         "spotify": "https://open.spotify.com/embed/playlist/69W3kWuH3gpEfmA4RSywdX?utm_source=generator"
 }
+
+const lang = {}
