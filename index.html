@@ -36,20 +36,17 @@
                         </div>
                 </header>
                 <div class="main_info">
-                        <script>
-                                generatePFP(user.image_url);
-                                generateUserInfo(user.name, strings.title);
-
-                        </script>
                 </div>
                 <div class="links">
-                        <script>
-                                generateLinks(strings.links.items, links);
-                        </script>
                 </div>
 
                 <footer>
                         <a href="https://zenworks.com.br" target="_blank">Zenworks</a>
                 </footer>
+                <script>
+                        generatePFP(user.image_url);
+                        generateUserInfo(user.name, strings.title);
+                        generateLinks(strings.links, links);
+                </script>
         </body>
 </html>
