@@ -221,6 +221,10 @@ header a i * {
                 background-color: var(--lm-header-bg)
         }
 
+        footer {
+                background-color: var(--lm-header-bg);
+        }
+
         footer * {
                 color: var(--lm-footer-content);
         }
