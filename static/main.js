@@ -27,7 +27,7 @@ function generateLinksTitle(about_links) {
         title.innerText = about_links
 }
 
-function generateLinkElement(title, data) {
+function generateLinkElement(title, text, data) {
 
         const linkItem = document.createElement('div')
         linkItem.setAttribute('class', 'link_item') 
@@ -43,7 +43,13 @@ function generateLinkElement(title, data) {
         linkPic.appendChild(pic)
         const linkContent = document.createElement('div')
         linkContent.setAttribute('class', 'link_container')
-        linkContent.innerText = title
+        const linkTitle = document.createElement("h4")
+        linkTitle.innerText = title
+        const linkText = document.createElement("p")
+        linkText.innerText = text
+        linkContent.appendChild(linkTitle)
+        linkContent.appendChild(linkText)
+
         
         linkRedir.appendChild(linkPic)
         linkRedir.appendChild(linkContent)
@@ -55,16 +61,15 @@ function generateSpotifyFrame(link) {
         const div = document.createElement('div')
         div.setAttribute('class', 'link_item')
         const frame = document.createElement('iframe')
-        frame.class = "link_item"
+        frame.setAttribute("class", "link_spotify")
         frame.src = link
         frame.width = "100%"
-        frame.height = "380"
         frame.frameborder="0"
         frame.allowfullscreen="" 
         frame.allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
 
         div.appendChild(frame)
-        return frame
+        return div
 }
 
 function generateLinks(link_conts, links) {
@@ -75,6 +80,6 @@ function generateLinks(link_conts, links) {
                         parent.appendChild(generateSpotifyFrame(data))
                         continue
                 }
-                parent.appendChild(generateLinkElement(link_conts.items[title], data))
+                parent.appendChild(generateLinkElement(title.replace("_", " ").toUpperCase(), link_conts.items[title], data))
         }
 }

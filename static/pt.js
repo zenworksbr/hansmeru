@@ -1,7 +1,7 @@
 lang['pt'] = {
-        "title": "Sou fofinho, viado, casado e tchola.",
+        "title": "22, engraçado, legal etc.",
         "links": {
-                "title": "siga minhas redes :)\nEstou produzindo meus próprios quadrinhos!",
+                "title": "siga minhas redes :) Estou produzindo meus próprios quadrinhos!",
                 "items": {
                         "kofi": "Se você quiser me mandar uma grana",
                         "instagram": "Eu costumo postar nos stories",
