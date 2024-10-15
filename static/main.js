@@ -16,7 +16,6 @@ function generateUserInfo(name, title) {
         h4.innerText = title
         userInfo.appendChild(h3)
         userInfo.appendChild(h4)
-        console.log(userInfo)
 
         parent.appendChild(userInfo)
 }
