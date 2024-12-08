@@ -194,10 +194,20 @@ header a i::before {
 
 .link_item * {
         display: flex;
+        gap: 25px;
+}
+
+.link_item a {
+        width: 100%;
 }
 
 .image_container {
+        max-width: 50px;
         max-height: 50px;
+}
+
+.link_container {
+        margin-left: 60px;
 }
 
 .link_container,
@@ -205,8 +215,6 @@ header a i::before {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        align-items: flex-start;
-        justify-content: space-between;
 }
 
 .link_container h4 {
