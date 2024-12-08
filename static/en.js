@@ -1,5 +1,5 @@
 lang['en'] = {
-        "title": "22yo, funny, nice, etc.",
+        "title": "23yo, funny, nice, etc.",
         "links": {
                 "title": "follow my socials for updates :) I'm working on my own comics!",
                 "items": {
