@@ -13,7 +13,9 @@ function generateUserInfo(name, title) {
         const h3 = document.createElement('h3')
         h3.innerText = name
         const h4 = document.createElement('h4')
-        h4.innerText = title
+        const bdy = new Date('2001.01.31').getFullYear()
+        const age = (+new Date().getFullYear() - bdy)
+        h4.innerText = `${age}${title}`
         userInfo.appendChild(h3)
         userInfo.appendChild(h4)
 

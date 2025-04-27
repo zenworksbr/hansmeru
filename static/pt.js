@@ -1,5 +1,5 @@
 lang['pt'] = {
-        "title": "23, engraçado, legal etc.",
+        "title": " anos, engraçado, legal etc.",
         "links": {
                 "title": "siga minhas redes :) Estou produzindo meus próprios quadrinhos!",
                 "items": {
